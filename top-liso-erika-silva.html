@@ -20,6 +20,26 @@ h2{font-family:Georgia,serif;font-size:30px;color:#ff5c9d;margin:0 0 10px}
 p{color:#ddd;line-height:1.7}
 .contact{padding:30px 22px 45px;background:#16020d;text-align:center}
 .phone{font-size:21px;font-weight:bold;color:#ff5c9d;margin:15px 0}
+
+.services{padding:36px 22px;background:#050505}
+.services h2{font-family:Georgia,serif;font-size:26px;color:#ff5c9d;margin:0 0 18px;text-align:center}
+.service-list{display:grid;gap:12px}
+.service-item{background:#111;border:1px solid #2a2a2a;border-radius:14px;overflow:hidden}
+.service-head{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;cursor:pointer}
+.service-head span.name{font-weight:700;font-size:16px}
+.service-head span.arrow{color:#f52b85;font-size:18px;transition:transform .2s}
+.service-item.open .service-head span.arrow{transform:rotate(45deg)}
+.service-body{max-height:0;overflow:hidden;transition:max-height .25s ease;padding:0 18px}
+.service-item.open .service-body{max-height:220px;padding:0 18px 18px}
+.service-body p{margin:0 0 14px;color:#ccc;font-size:14px;line-height:1.6}
+.service-body a{display:inline-block;background:#f52b85;color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:10px 18px;border-radius:20px}
+.feedback{padding:36px 22px 10px;background:#16020d}
+.feedback h2{font-family:Georgia,serif;font-size:26px;color:#ff5c9d;margin:0 0 18px;text-align:center}
+.feedback-list{display:grid;gap:14px}
+.feedback-item{background:#1f0512;border-radius:14px;padding:18px}
+.feedback-item p.txt{color:#eee;font-size:14px;line-height:1.6;margin:0 0 10px;font-style:italic}
+.feedback-item p.name{color:#ff8ec2;font-size:13px;font-weight:700;margin:0}
+.stars{color:#ffcb45;letter-spacing:2px;margin-bottom:8px;font-size:15px}
 </style>
 </head>
 <body>
@@ -35,6 +55,67 @@ p{color:#ddd;line-height:1.7}
 <h2>Beleza & Progressiva</h2>
 <p>Atendimento personalizado para deixar seus cabelos mais lisos, alinhados, saudáveis e com brilho.</p>
 </section>
+
+<section class="services">
+<h2>Serviços</h2>
+<div class="service-list">
+
+<div class="service-item">
+<div class="service-head" onclick="this.parentElement.classList.toggle('open')">
+<span class="name">Escova</span><span class="arrow">+</span>
+</div>
+<div class="service-body">
+<p>Escova modeladora para alinhar e dar brilho ao cabelo no dia a dia.</p>
+<a href="https://wa.me/5545999605984?text=Ol%C3%A1%20Erika!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Escova." target="_blank">Consultar no WhatsApp</a>
+</div>
+</div>
+
+<div class="service-item">
+<div class="service-head" onclick="this.parentElement.classList.toggle('open')">
+<span class="name">Hidratação</span><span class="arrow">+</span>
+</div>
+<div class="service-body">
+<p>Tratamento profundo para nutrir, fortalecer e devolver o brilho aos fios.</p>
+<a href="https://wa.me/5545999605984?text=Ol%C3%A1%20Erika!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Hidrata%C3%A7%C3%A3o." target="_blank">Consultar no WhatsApp</a>
+</div>
+</div>
+
+<div class="service-item">
+<div class="service-head" onclick="this.parentElement.classList.toggle('open')">
+<span class="name">Progressiva</span><span class="arrow">+</span>
+</div>
+<div class="service-body">
+<p>Alisamento que deixa o cabelo liso, alinhado e com muito mais maciez.</p>
+<a href="https://wa.me/5545999605984?text=Ol%C3%A1%20Erika!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Progressiva." target="_blank">Consultar no WhatsApp</a>
+</div>
+</div>
+
+<div class="service-item">
+<div class="service-head" onclick="this.parentElement.classList.toggle('open')">
+<span class="name">Corte</span><span class="arrow">+</span>
+</div>
+<div class="service-body">
+<p>Corte personalizado de acordo com o formato do rosto e estilo desejado.</p>
+<a href="https://wa.me/5545999605984?text=Ol%C3%A1%20Erika!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Corte." target="_blank">Consultar no WhatsApp</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="feedback">
+<h2>O que dizem as clientes</h2>
+<div class="feedback-list">
+
+<div class="feedback-item">
+<div class="stars">★★★★★</div>
+<p class="txt">Depoimento em breve.</p>
+<p class="name">Cliente</p>
+</div>
+
+</div>
+</section>
+
 <section class="contact">
 <h2>Agende seu horário</h2>
 <div class="phone">(45) 99960-5984</div>
